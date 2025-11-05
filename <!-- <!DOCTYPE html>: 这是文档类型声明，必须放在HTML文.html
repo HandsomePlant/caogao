@@ -1,0 +1,194 @@
+<!-- <!DOCTYPE html>: 这是文档类型声明，必须放在HTML文档的第一行。它告诉浏览器这个页面是使用HTML5标准编写的。 -->
+<!DOCTYPE html>
+
+<!-- <html lang="zh-CN">: 这是HTML文档的根元素，所有其他元素都是它的后代。lang="zh-CN" 属性声明了页面的主要语言是中文，有助于搜索引擎和辅助工具。 -->
+<html lang="zh-CN">
+
+<!-- <head>: "头部"元素。它包含了所有不想在页面主体中显示，但对文档很重要的元数据（metadata）。 -->
+<head>
+  <!-- <meta charset="UTF-8">: 声明文档使用的字符编码为UTF-8，这可以防止中文等非英文字符显示为乱码。 -->
+  <meta charset="UTF-8">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">: 这是一个移动端优化的关键设置，它告诉浏览器页面的宽度应等于设备的宽度，初始缩放比例为1倍。 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <title>: 定义显示在浏览器标签页或收藏夹中的标题。 -->
+  <title>知行合一 - 在线学习平台</title>
+<!-- </head>: 头部区域的结束。 -->
+</head>
+
+<!-- <body>: "身体"元素。所有你希望用户在浏览器窗口中看到的可见内容，都应该放在这里。 -->
+<body>
+
+  <!-- <header>: 这是一个语义化标签，定义了页面的头部区域。通常包含logo、网站标题和主导航。 -->
+  <header>
+    <!-- <img>: 嵌入一张图片。这是一个空元素。 -->
+    <!-- src="...": 指定图片的来源地址。这里我们使用一个在线占位图服务。 -->
+    <!-- alt="...": 当图片无法加载时显示的替代文本，对可访问性至关重要。 -->
+    <img src="https://via.placeholder.com/150x50?text=知行合一" alt="知行合一平台Logo">
+
+    <!-- <nav>: 这是一个语义化标签，定义了页面的主导航链接区域。 -->
+    <nav>
+      <!-- <ul>: 创建一个无序列表，用于组织导航链接。 -->
+      <ul>
+        <!-- <li>: 列表中的一个项目。 -->
+        <li>
+          <!-- <a>: 创建一个超链接。href="#" 表示一个临时的、不跳转的链接。 -->
+          <a href="#">首页</a>
+        </li>
+        <li><a href="#">课程目录</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">联系我们</a></li>
+      <!-- </ul>: 无序列表的结束。 -->
+      </ul>
+    <!-- </nav>: 导航区域的结束。 -->
+    </nav>
+  <!-- </header>: 头部区域的结束。 -->
+  </header>
+
+  <!-- <main>: 这是一个语义化标签，定义了文档的核心、主要内容。一个页面应该只有一个 <main> 元素。 -->
+  <main>
+    
+    <!-- <section>: 语义化标签，定义文档中的一个独立部分或章节。 -->
+    <section>
+      <!-- <h1>: 定义最高级别的一级标题，是本页的核心主题。 -->
+      <h1>开启你的知识成长之旅</h1>
+      <!-- <p>: 定义一个段落。 -->
+      <p>在“知行合一”，我们相信学习不仅是获取信息，更是构建体系、付诸实践的过程。</p>
+    </section>
+
+    <section>
+      <!-- <h2>: 定义一个二级标题，是当前部分的主题。 -->
+      <h2>热门课程推荐</h2>
+      <!-- <ul>: 再次使用无序列表来展示课程卡片。 -->
+      <ul>
+        <li>
+          <!-- <h3>: 三级标题，用作课程名称。 -->
+          <h3>HTML 从入门到精通</h3>
+          <p>学习构建网页的基石，理解语义化标签的强大之处。</p>
+          <!-- <a>: 创建一个链接，引导用户了解更多。 -->
+          <a href="#">查看详情 &gt;</a>
+        </li>
+        <li>
+          <h3>CSS 网页美学设计</h3>
+          <p>将你的HTML骨架变得有血有肉，掌握布局与美化的艺术。</p>
+          <a href="#">查看详情 &gt;</a>
+        </li>
+        <li>
+          <h3>JavaScript 交互魔法</h3>
+          <p>为你的网页注入生命力，实现动态效果与用户交互。</p>
+          <a href="#">查看详情 &gt;</a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>课程学习计划</h2>
+      <!-- <p>: 对下面的表格进行简要说明。 -->
+      <p>选择最适合你的学习计划，开启你的旅程。</p>
+      
+      <!-- <table>: 定义一个表格，用于展示二维结构化数据。 -->
+      <table>
+        <!-- <thead>: 语义化标签，用于组合表格的头部内容。 -->
+        <thead>
+          <!-- <tr>: 定义表格中的一行 (Table Row)。 -->
+          <tr>
+            <!-- <th>: 定义一个表头单元格 (Table Header)。scope="col" 属性明确指出这个表头是针对这一“列”的。 -->
+            <th scope="col">计划名称</th>
+            <th scope="col">包含内容</th>
+            <th scope="col">价格</th>
+          </tr>
+        <!-- </thead>: 表格头部的结束。 -->
+        </thead>
+        
+        <!-- <tbody>: 语义化标签，用于组合表格的主体内容。 -->
+        <tbody>
+          <!-- <tr>: 定义表格中的第二行。 -->
+          <tr>
+            <!-- <td>: 定义一个标准的数据单元格 (Table Data)。 -->
+            <td>免费体验版</td>
+            <td>所有课程第一章节的访问权限。</td>
+            <td>¥0</td>
+          </tr>
+          <!-- <tr>: 定义表格中的第三行。 -->
+          <tr>
+            <td>高级会员版</td>
+            <td>访问所有课程、项目源码和专属社区。</td>
+            <td>¥99/月</td>
+          </tr>
+          <!-- <tr>: 定义表格中的第四行。 -->
+          <tr>
+            <td>终身大师版</td>
+            <td><strong>高级版所有内容</strong>，外加一对一导师辅导。</td>
+            <td>¥1999</td>
+          </tr>
+        <!-- </tbody>: 表格主体的结束。 -->
+        </tbody>
+      <!-- </table>: 表格的结束。 -->
+      </table>
+    </section>
+
+    <section>
+      <h2>联系我们与意见反馈</h2>
+      <!-- <form>: 定义一个表单，用于收集用户输入。 -->
+      <!-- action="/submit-feedback": 指定表单数据提交到的服务器地址。 -->
+      <!-- method="post": 指定使用POST方法提交数据，数据更安全，不会显示在URL中。 -->
+      <form action="/submit-feedback" method="post">
+        <!-- <p>: 使用段落来组织表单项，使其在垂直方向上分隔开。 -->
+        <p>
+          <!-- <label for="name-input">: 为输入框提供一个标签，点击标签可以聚焦到对应的输入框。 -->
+          <label for="name-input">您的姓名:</label><br> <!-- <br> 是一个空元素，用于强制换行。 -->
+          <!-- <input>: 定义一个输入控件，它是一个空元素。 -->
+          <!-- type="text": 指定这是一个单行文本输入框。 -->
+          <!-- id="name-input": 唯一的ID，用于和<label>的for属性关联。 -->
+          <!-- name="username": 提交到服务器时，这个输入框数据的“名字”。 -->
+          <input type="text" id="name-input" name="username">
+        </p>
+
+        <p>
+          <label for="email-input">您的邮箱:</label><br>
+          <!-- type="email": 专门用于输入邮箱的类型，浏览器可能会进行格式校验。 -->
+          <input type="email" id="email-input" name="user_email">
+        </p>
+
+        <p>
+          <label for="course-select">您感兴趣的课程:</label><br>
+          <!-- <select>: 创建一个下拉选择菜单。 -->
+          <select id="course-select" name="interested_course">
+            <!-- <option>: 定义下拉菜单中的一个选项。value属性是提交到服务器的值。 -->
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="message-area">您的建议:</label><br>
+          <!-- <textarea>: 定义一个多行文本输入区域。 -->
+          <textarea id="message-area" name="user_message" rows="4" cols="50"></textarea>
+        </p>
+
+        <p>
+          <!-- <button type="submit">: 定义一个按钮。type="submit" 表示点击它会提交整个表单。 -->
+          <button type="submit">提交反馈</button>
+        </p>
+      <!-- </form>: 表单的结束。 -->
+      </form>
+    </section>
+
+  <!-- </main>: 主要内容区域的结束。 -->
+  </main>
+
+  <!-- <footer>: 语义化标签，定义页面的脚部区域。 -->
+  <footer>
+    <!-- <p>: 使用段落来显示版权信息。 -->
+    <!-- &copy; 是一个HTML实体(entity)，用于显示版权符号 ©。 -->
+    <p>&copy; 2025 知行合一学习平台. 保留所有权利。</p>
+  <!-- </footer>: 脚部区域的结束。 -->
+  </footer>
+
+<!-- </body>: 身体区域的结束。 -->
+</body>
+
+<!-- </html>: 整个HTML文档的结束。 -->
+</html>html
