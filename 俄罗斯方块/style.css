@@ -1,0 +1,79 @@
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", "PingFang SC", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #1a1b3a, #0a0a16 65%);
+  color: #f5f7ff;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+  padding: 1.5rem;
+}
+
+.game-panel,
+.info-panel {
+  background: rgba(14, 16, 40, 0.82);
+  border: 1px solid rgba(120, 125, 255, 0.3);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+#board {
+  display: block;
+  background: #090a1a;
+  border: 2px solid #8587ff;
+  border-radius: 8px;
+}
+
+.info-panel {
+  min-width: 170px;
+}
+
+#restart {
+  width: 100%;
+  margin-top: 0.4rem;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem;
+  background: linear-gradient(90deg, #4f64ff, #884fff);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#restart:hover {
+  filter: brightness(1.1);
+}
+
+.status {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.tips {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
